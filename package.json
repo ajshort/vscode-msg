@@ -1,0 +1,26 @@
+{
+    "name": "msg",
+    "displayName": "Msg Language Support",
+    "description": "Language support for ROS action, msg and srv files",
+    "version": "0.0.1",
+    "publisher": "ajshort",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "msg",
+            "aliases": ["Msg", "msg"],
+            "extensions": [".action", ".msg", ".srv"],
+            "configuration": "./msg.configuration.json"
+        }],
+        "grammars": [{
+            "language": "msg",
+            "scopeName": "source.msg",
+            "path": "./syntaxes/msg.tmLanguage"
+        }]
+    }
+}
