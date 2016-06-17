@@ -16,6 +16,27 @@
 
     <key>patterns</key>
     <array>
+        <dict>
+            <key>comment</key>
+            <string>Match strings separately to avoid capturing comments.</string>
+            <key>match</key>
+            <string>^(?:\s*)(string)\s+([a-zA-Z][a-zA-Z0-9_]+)\s*=(.*)$</string>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict><key>name</key><string>storage.type.msg</string></dict>
+                <key>2</key>
+                <dict><key>name</key><string>variable.parameter.msg</string></dict>
+                <key>3</key>
+                <dict><key>name</key><string>string.unquoted.msg</string></dict>
+            </dict>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>#.*$</string>
+            <key>name</key>
+            <string>comment.line.number-sign.msg</string>
+        </dict>
     </array>
 </dict>
 </plist>
