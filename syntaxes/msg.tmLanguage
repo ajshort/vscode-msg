@@ -37,6 +37,18 @@
             <key>name</key>
             <string>comment.line.number-sign.msg</string>
         </dict>
+        <dict>
+            <key>match</key>
+            <string>\b(True|False)\b</string>
+            <key>name</key>
+            <string>constant.language.msg</string>
+        </dict>
+        <dict>
+            <key>match</key>
+            <string>\b[+-]?[0-9]*\.?[0-9]+([eE][+-]?\d+)?\b</string>
+            <key>name</key>
+            <string>constant.numeric.msg</string>
+        </dict>
     </array>
 </dict>
 </plist>
