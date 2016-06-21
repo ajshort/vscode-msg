@@ -20,7 +20,7 @@
         "grammars": [{
             "language": "msg",
             "scopeName": "source.msg",
-            "path": "./syntaxes/msg.tmLanguage"
+            "path": "./syntaxes/msg.json"
         }]
     }
 }

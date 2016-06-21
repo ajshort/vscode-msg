@@ -1,0 +1,28 @@
+{
+    "name": "Msg",
+    "scopeName": "source.msg",
+    "fileTypes": ["action", "msg", "srv"],
+    "patterns": [
+        {
+            "comment": "Match strings separately to avoid capturing comments.",
+            "match": "^(?:\\s*)(string)\\s+([a-zA-Z][a-zA-Z0-9_]+)\\s*=(.*)$",
+            "captures": {
+                "1": {"name": "storage.type.msg"},
+                "2": {"name": "variable.parameter.msg"},
+                "3": {"name": "string.unquoted.msg"}
+            }
+        },
+        {
+            "match": "#.*$",
+            "name": "comment.line.number-sign.msg"
+        },
+        {
+            "match": "\b(True|False)\b",
+            "name": "constant.language.msg"
+        },
+        {
+            "match": "\\b[+-]?[0-9]*\\.?[0-9]+([eE][+-]?\\d+)?\\b",
+            "name": "constant.numeric.msg"
+        }
+    ]
+}
