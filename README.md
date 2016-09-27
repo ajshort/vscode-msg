@@ -11,6 +11,10 @@ Basic language support for ROS `.action`, `.msg` and `.srv` files.
 
 ## Release Notes
 
+### 0.1.1
+
+* Fix highlighting for u?int64.
+
 ### 0.1.0
 
 * Initial release.
