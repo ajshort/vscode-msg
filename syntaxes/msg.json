@@ -58,7 +58,7 @@
         "types": {
             "patterns": [
                 {
-                    "match": "\\b(bool|u?int(8|16|32)|float(32|64)|string|time|duration)\\b",
+                    "match": "\\b(bool|u?int(8|16|32|64)|float(32|64)|string|time|duration)\\b",
                     "name": "storage.type.msg"
                 },
                 {
